@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "remove agora ads",
+    "version": "1.0",
+    "description": "remove the ads from agora page",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.agora.co.il/*"], 
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
